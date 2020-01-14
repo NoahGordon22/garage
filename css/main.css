@@ -1,0 +1,439 @@
+* {
+	box-sizing:border-box;
+	font-weight: 300;
+}
+
+body{
+	margin: 0
+}
+
+/*======================================== Navigation Styles ========================================*/
+header{
+	margin: 0 auto;
+}
+img.logo{
+	
+}
+.logo-wrap img {
+	margin: 0;
+	float: left;
+	width: 150px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #040605;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+li {
+  float: left;
+  font-size: 20px;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 560px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*======================================== home page Styles ========================================*/
+.home body {
+  background-color: grey;
+}
+
+.home div.info-col{
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: grey;
+}
+
+.home div.white-space{
+  margin-top: 15px;
+  background-color: white;
+}
+
+.home div.name{
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 100px;
+  background-color: #040605;
+}
+
+
+.home h1.name1{
+  padding: 20px;
+  color: white;
+  text-align: center;
+  font-size: 48px;
+}
+
+.home img.garage{
+  width: 100%;
+}
+
+.home h3{
+  margin-top: 200px;
+}
+
+/*======================================== For Sale Page Styles ========================================*/
+
+body.for-sale {
+	background-color: grey;
+}
+
+.for-sale div.info-col{
+	width: 70%;
+	height: 100%;
+	margin: 0 auto;
+	background-color: grey;
+}
+
+.for-sale div.desc-info{
+	width: 70%;
+	height: 100%;
+	margin: 0 auto;
+	background-color: white;
+}
+.for-sale div.car-price-car-name{
+	margin-top: 100px;
+	background-color: #040605;
+}
+.for-sale h1.price{
+	padding: 20px;
+	color: white;
+}
+
+.for-sale li{
+	display: list-item;
+	text-align: -webkit-match-parent;
+}
+
+/* Slideshow container */
+.for-sale .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.for-sale .mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.for-sale .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.for-sale .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.for-sale .prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.for-sale .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.for-sale .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.for-sale .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0px 2px 50px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.for-sale .active, .dot:hover {
+  background-color: #040605;
+}
+
+/* Fading animation */
+.for-sale .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.for-sale p{
+	color:white;
+	text-align: center;
+}
+
+.for-sale h2{
+	color:white;
+	text-align: center;
+}
+
+.for-sale .tabsKK{
+	width: 100%;
+	display: inline-block;
+	border: 1px solid #ccc;
+}
+
+
+.for-sale .tab-linksKK li{
+	float: left;
+	list-style: none;
+	margin-top: -16px;
+}
+
+.for-sale .tab-linksKK:after{
+	display: block;
+	clear: both;
+	content: '';
+}
+
+.for-sale #content{
+	width: 64%;
+	float: left;
+}
+
+.for-sale div.tabsKK{
+	width: 100%;
+	display: inline-block;
+	border:1px solid #ccc;
+}
+
+.for-sale p.Description{
+	margin: 0 auto;
+	font-size: 40px;
+	color: white;
+	background-color: white; 
+	margin-left: 140%	
+}
+
+.for-sale li.active a, li.active a:hover{
+	background: #fff;
+	color: #000000;
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+.for-sale .tab-linksKK a{
+	padding: 9px 15px;
+	display: inline-block;
+	border-radius: 3px 3px 0px 0px;
+	background: none;
+}
+
+.for-sale a{
+	color: #666;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.for-sale .tabsKK {
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #ccc;
+}
+
+.for-sale .tab-linksKK:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.for-sale li.active {
+    border-bottom: none !important;
+}
+
+.for-sale .tab-linksKK li {
+    /*margin:0px 5px;*/
+    float: left;
+    list-style: none;
+    margin-top: -16px;
+    border-bottom: 1px solid #ccc;
+}
+
+.for-sale .tab-linksKK a {
+    padding: 9px 15px;
+    width: 291.5px;
+    display: inline-block;
+    border-radius: 3px 3px 0px 0px;
+    background: none;
+    font-size: 16pt;
+    font-weight: bold;
+    color: #3366cc;
+    transition: all linear 0.15s;
+}
+
+.for-sale .tab-contentKK {
+    padding: 15px;
+    border-radius: 3px;
+    box-shadow: -1px 1px 1px rgba(0,0,0,0.15);
+    background: #fff;
+}
+
+.for-sale .tabKK {
+    display: none;
+}
+
+.for-sale .tabKK.active {
+   display: block;
+}
+
+.for-sale div.desc-info{
+  margin-bottom: 100px;S
+}
+
+/*======================================== contact ========================================*/
+body{
+  background-color: grey;
+}
+.contact body.contact{
+	background-color: grey;
+}
+.contact div.info-col{
+	width: 70%;
+	height: 100%;
+	margin: 0 auto;
+	background-color: grey;
+}
+
+.contact img.garage{
+	width: 100%;
+}
+
+.contact div.name{
+  width: 75%;
+	margin: 0 auto;
+  margin-top: 100px;
+	background-color: #040605;
+}
+
+.contact h1.name1{
+	padding: 20px;
+	color: white;
+  text-align: center;
+  font-size: 48px;
+}
+
+.contact div.white-space{
+  width: 100%;
+  margin-top:15px;
+  background-color: white;
+}
+
+.contact div.name2{
+  width: 75%;
+  margin:0 auto;
+  background-color: #040605;
+  color:white;
+  text-align:center;
+  border-color: white;
+}
+
+
+.contact div.name3{
+  padding: 15px;
+  width: 75%;
+  margin:0 auto;
+  background-color: white;
+  color: black;
+  margin-top: 20px;
+  text-align:center;
+  border-color: white;
+}
+
+.contact h2.header1{
+  color: white;
+  background-color: #040605;
+  width: 100%;
+}
+
+
+.contact h2.header1{
+  margin-bottom: 0px;
+}
+
+.contact div.name3{
+  margin-top: 0px;
+  border: black 1px solid;
+}
